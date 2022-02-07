@@ -1,0 +1,7 @@
+<h2>All of our Pets:</h2>
+
+{{#each pets}}
+<h3>{{this.name}}</h3>
+    <a href='/pets/update-pet-info/{{this._id}}'>Update pet info</a>
+    <a href='/pets/adopt-pet/{{this._id}}'>Adopt Pet</a>
+{{/each}}

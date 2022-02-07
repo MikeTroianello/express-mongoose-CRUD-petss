@@ -1,0 +1,13 @@
+<h2>Change {{name}}s' info</h2>
+
+{{!-- Change action route --}}
+<form method="post" action="/pets/update-pet-info/{{_id}}">
+
+    <input type="text" name="name" value={{name}}>
+    <input type="number" name="age" value={{age}}>
+    <input type="text" name="animalType" value={{animalType}} >
+    <input type='checkbox' name="isFixed" value={{isFixed}}>
+
+    <button type="submit">Add Pet</button>
+
+</form>
